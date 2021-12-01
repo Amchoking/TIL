@@ -1,0 +1,13 @@
+9. Palindrome Number
+Problem:
+Given an integer x, return true if x is palindrome integer.
+An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not.
+
+문제:
+정수 x가 준어진다, 펠린드롬인지 아닌지 리턴하라.
+앞으로 읽으나 뒤로 읽으나 같을 때 펠린드롬이다. 예를들어 121은 펠린드롬인 반면에 123은 아니다.
+
+쉬운 문제라서 아무생각없이 10씩 나누어서 배열로 저장하는 방법을 사용하였다.
+제출 후 다시 생각해보니 그냥 정수를 문자열로 바꾸어 스플라이싱을 통해 역순으로 정렬한것과 비교하면 바로 끝난다는 것을 알았다.
+따라서 return str(x)== str(x)[::-1]만으로 끝나는 문제였다.
+충분히 생각하면 군더더기 없이 깔끔히 이해가능한 짧은 코딩도 가능하다. 충분히 생각하고 코딩하자!
