@@ -1,0 +1,26 @@
+1. Two Sum
+Problem:
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+
+문제:
+정수들의 배열과 타겟정수가 주어진다, 두 개의 정수를 더해 타겟값이 나오는 인덱스 값들을 리턴해라/
+각각의 입력들은 오직 하나의 해답만 있다고 추측해도 되고, 같은 요소는 두번 사용할 수 없다.
+답의 순서는 상관없다.
+
+나는 brute force방식으로 시간복잡도 O(n^2)의 방법으로 문제를 풀었다.
+이것은 짧은 코드로 구현할 수 있는 방법이긴 하지만 testcase의 배열이 큰 경우 n값이 증가하여 소모되는 시간 n^2만큼 길어진다.
+여기서 더 효율적인 코딩이 가능한데 그것은 dictionary(hashtag, hashmap)를 사용한 방법이다.
+딕셔너리 검색의 시간복잡도는 O(1)이다. 이것을 n번만큼 반복하므로 총 시간복잡도는 O(n)이 된다.
+구체적인 방법은 다음과 같다.
+
+1. dictionary를 만든다.
+2. array의 처음부터 시작해서 target - 현재 값이 dictionary에 있는지 확인한다.
+3. dictionary에 없다면 key값을 array의 현재 값, 밸류값을 array의 index값으로 저장한다.
+4. dictionary에 있다면 target-현재 값의 밸류값과 현재 값의 index값을 리턴한다.
+
+이렇게 하면 시간을 절약하여 값을 구할 수 있게 된다.
+
+ps. TIL을 하기위해 깃허브를 사용한 이후 첫 커밋이자 푸시이다.
+깃허브에 내가 한 기록을 옮기는 방법을 배울 수 있었다.
