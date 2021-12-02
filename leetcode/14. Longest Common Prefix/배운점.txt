@@ -1,0 +1,8 @@
+14. Longest Common Prefix
+Problem:
+Write a function to find the longest common prefix string amongst an array of strings.
+If there is no common prefix, return an empty string "".
+
+문제:
+앞에서 부터 시작하는 문자열 중, 모든 문자열 배열들 포함되는 가장 긴 문자열을 찾는 함수를 작성해라.
+공통된 문자열이 없다면 빈 스트링 ""를 출력하라
