@@ -1,0 +1,15 @@
+214. Shortest Palindrome
+
+problem:
+You are given a string s. You can convert s to a palindrome by adding characters in front of it.
+Return the shortest palindrome you can find by performing this transformation.
+
+문제:
+문자열 s가 주어진다. 앞에서 부터 문자들을 추가하여 대칭문자열을 만들어라
+이 방법으로 만들 수 있는 가장 짧은 대칭 문자열을 리턴하라.
+
+앞에서 부터 대칭문자열인지 확인해가며 가장 긴 대칭 문자열을 찾는다.
+이후 대칭 문자열의 뒷부분의 역순값을 원래 문자열에 합치면 답이 나온다.
+시간 복잡도는 O(n^2)이 나왔는데, 
+대칭 문자열을 찾는 과정을 최적화 할 수 있다면 속도도 더 빠르게 할 수 있을것 같다.
+KMP를 활용한다고 해서 KMP에 관한 지식을 공부했다. 다음에는 KMP관련 문제를 풀고 학습해야겠다.
