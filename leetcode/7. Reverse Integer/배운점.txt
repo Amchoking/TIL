@@ -1,0 +1,16 @@
+7. Reverse Integer
+Problem:
+Given a signed 32-bit integer x, return x with its digits reversed.
+If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
+Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+
+문제:
+32비트의 정수 x가 주어질 때, 그것의 역숫자를 리턴하라.
+만약 x의 역숫자가 32비트 정수범위의 밖에 있다면, 0을 리턴해라.
+64비트의 정수형에 저장하는것을 허락하지 않는다.
+
+배운점
+처음에는 마지막문장을 읽지 않고 문자열에 저장하고 정수형으로 바꾼 뒤, 32비트 범위내에 답이 들어온다면, 역순으로 출력하는 방법을 사용하였다.
+하지만 마지막 문장에서 64비트의 정수형에 저장하는것을 금지했으므로 정수형으로 바꾸면서 64비트 정수형을 사용한 것이 된다.
+따라서 문자열끼리 비교하여 값을 확인한다음, 32비트 정수 범위안에 들어오면 32비트 정수형으로 바꾸는 방법을 사용했다.
+시간복잡도는 각자리수의 숫자들의 갯수이므로 O(log(x))가 된다.
