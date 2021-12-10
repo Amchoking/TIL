@@ -1,0 +1,13 @@
+70. Climbing Stairs
+
+problem:
+You are climbing a staircase. It takes n steps to reach the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+문제:
+당신은 계단을 오르고잇다. 끝에 다다를때 까지 n개의 계단이 있다.
+너는 1 또는 2개만큼의 계단을 매번 오를 수 있다. 니가 끝에 다다를 수 있는 경우는 몇 가지인가?
+
+배운점:
+이 문제는 간단하게 피보나치로 해결 할 수 있다. 하지만 단순 재귀함수를 사용하게 되면 동일한 연산을 계속 사용하게 되므로 함수에 값을 저장하여 한번의 계산으로 값을 계산하고,
+이 후부터는 그 값을 불러오기만 하면 된다. 그러면 주어진 계단 n에 대하여 시간복잡도 O(n)으로 이 문제를 해결할 수 있게된다.
