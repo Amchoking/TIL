@@ -1,0 +1,15 @@
+17. Letter Combinations of a Phone Number
+
+Problems:
+Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+
+문제:
+2~9까지의 문자로된 숫자들이 주어진다. 숫자들이 표현할 수 있는 가능한 모든 문자조합들을 출력해라. 출력 순서는 상관없다.
+숫자들과 문자의 맵핑은 아래에 주어져있다. 1은 어떤 문자에도 매핑되지 않음을 주목하라.
+
+배운점, 해결방법:
+처음에는 재귀함수를 이용한 방법이 떠올랐다. 이와 유사한 문제들은 재귀함수를 이용하여 푼 기억이 있기 때문이다.
+하지만 나는 이 함수 내에서 문제를 해결해 보고 싶었다. 재귀함수 대신 정답 배열에 들어가 있는 문자열의 수만큼 반복하는 것으로 해결할 수 있을 것 같았다.
+2~9까지의 숫자들에 해당하는 문자들을 딕셔너리에 저장해 놓고, 이전 문자열에서 이번 숫자에 해당하는 문자들을 반복해 더해나가는 것으로 모든 경우를 해결 할 수있었다.
+결과적으로 런타임 상위 34.76%, 메모리사용 상위 3.59%가 되었는데 너무 기분 좋았다.
