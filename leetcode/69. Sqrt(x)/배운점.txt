@@ -1,0 +1,22 @@
+69. Sqrt(x)
+
+ Problems:
+Given a non-negative integer x, compute and return the square root of x.
+Since the return type is an integer, the decimal digits are truncated, and only the integer part of the result is returned.
+Note: You are not allowed to use any built-in exponent function or operator, such as pow(x, 0.5) or x ** 0.5.
+
+문제:
+음이아닌 정수 x가 주어진다. root x 값을 계산하여 리턴하라.
+리턴 타입은 정수형이기 때문에 숫자들은 잘려진다, 그리고 오직 결과값의 정수부분만을 출력하라.
+주목하라: 너는 내장 거듭제곱 함수를 사용하는 것이 허락되지 않는다. pow(x,0.5) 또는 x**0.5와 같은 것들처럼.
+
+배운점, 해결방법:
+만약 0부터 시작해서 차례대로 계산하여 i**2<=x와 (i+1)**2>x를 동시에 만족하는 경우를 찾아나간다면 총 시간복잡도는 O(sqrt(x))가 된다.
+해당범위 내에서 이것은 46341번의 계산을 하면 해결 될 수 있게된다. 하지만 만약 log2(x)의 시간복잡도가 걸린다면 31번의 계산만으로 해결이 가능하다.
+따라서 조금 더 빠른 계산을 위해 binary search를 통해서 이 문제를 해결해 보고자 한다.
+처음 사용한 방법은 i**2<=x와 (i+1)**2>x를 동시에 만족하는 경우를 찾아서 출력하는 방법을 사용하고자 했다. low, mid, high값을 사용하는 것이 아닌,
+now값과 movesize값을 이용해 이전 이동거리의 절반만큼씩 now값을 계속 이동시켜가며 만족시키는 값을 찾는 방식이었다.
+하지만 코드가 깔끔하지 않은것 같아 low, mid, high를 이용한 방법으로도 해결해 보았다.
+이때 low==high를 만족한 경우에도 문제가 해결되지 않았다면 딱 떨어지는 값이 아닌 소수점이 생기고 버림이 발생한 경우가 된다.
+이 경우에는 지금의 low(=mid=high)값에서 1을 뺀것이 정답이 되므로 최종적으로는 high=mid-1를 거쳐나온 high값이 정답이된다.
+따라서 while문 안에서 해결되지 않은경우 high값을 리턴하면 된다.
