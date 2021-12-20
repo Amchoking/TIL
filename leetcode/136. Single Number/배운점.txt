@@ -1,0 +1,15 @@
+136. Single Number
+
+Problem:
+Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+문제:
+비어있지 않은 정수들의 배열이 주어진다. 모든 요소는 하나를 제외하고는 두번씩 나타난다. 혼자인 하나를 찾아라
+너는 O(n)의 시간복잡도와 O(1)의 공간복잡도로 실행해야한다.
+
+배운점, 해결방법:
+처음부터 해결방법을 떠올리지 못하고, XOR을 생각해 내는데 오래걸렸다. 처음에는 합이나 차를 이용한 방법을 떠올렸다.
+같은숫자가 두번나왔을때 연산하여 0이나오는 것이 뺄셈밖에 떠오르지 않았다. 하지만 결국 반복되는 경우에만 빼주어야 함으로,
+집합이나 배열, 딕셔너리를 사용하게 되므로 뺄셈을 이용할 수 없었다. 하루동안 생각해본결과 같은수를 연산하여 0이 나오는 연산이
+뺄셈말고도 XOR이 있다는 것이 생각났고, 그것으로 코드를 구현하였다. 쌍을 제외한 것을 찾을때 XOR도 좋은 방법이라는 것을 배웠다.
