@@ -1,0 +1,23 @@
+202. Happy Number
+
+Problem:
+Write an algorithm to determine if a number n is happy.
+A happy number is a number defined by the following process:
+Starting with any positive integer, replace the number by the sum of the squares of its digits.
+Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
+Those numbers for which this process ends in 1 are happy.
+Return true if n is a happy number, and false if not.
+
+문제:
+숫자n이 행복한지 아닌지 확인하는 알고리즘을 써라
+행복한 숫자는 다음과 같이 정의된다:
+어떤 양수로 시작하여, 그것 각각의 숫자의 제곱의 합으로 대체된다.
+숫자가 1이 될때까지 반복되거나, 그것이 1을 포함하지않은 수들로 끝없이 반복된다.
+1로 끝나는 숫자들이 행복한것들이다.
+n이 행복한숫자라면 true를 리턴하고 아니면 false를 리턴해라
+
+배운점, 해결방법:
+지금까지 나온 숫자들을 저장해 놓고, 계속 반복해 가면서 다음숫자를 찾는다.
+이때 탈출조건은 1이 나온경우 true 이전에 나온숫자가 다시한번 나오면 false
+두 조건 모두 해당하지 않으면 계속 반복해 나간다.
+이와같은 방법으로 계속해 나가면 행복한 숫자를 찾을 수 있다.
