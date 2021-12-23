@@ -1,0 +1,15 @@
+35. Search Insert Position
+
+problem:
+Given a sorted array of distinct integers and a target value, return the index if the target is found.
+If not, return the index where it would be if it were inserted in order.
+You must write an algorithm with O(log n) runtime complexity.
+
+문제:
+정렬된 정수들이 주어지고 타겟값이 주어진다. 타겟값이 들어간 인덱스를 리턴해라.
+만약 없다면 순서에맞게 들어가야할 인덱스를 리턴해라.
+너는 시간복잡도 O(log n)의 알고리즘을 짜야한다.
+
+배운점, 해결방법:
+이분탐색을 통해서 중간값이 클 때와 작을 때로 나누어서 반복해 나갔다.
+이때 시간을 더 단축하기 위해서 mid, mid+1을 모두 사용했으며 같은경우는 예외처리로 빠르게 해결하였다.
