@@ -1,0 +1,14 @@
+53. Maximum Subarray
+
+problem:
+Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+A subarray is a contiguous part of an array.
+
+문제:
+정수로 이루어진 배열이 주어진다, 연속하는 부분배열중 그합이 가장 큰것을 찾아 합을 리턴해라.
+부분배열은 배열의 연속된 부분이다.
+
+배운점, 해결방법:
+생각해보니 그냥 앞에서부터 더하다가 지금까지의 합이 0이나 음수가 나오면 합을 0으로 만들어 준뒤 계속 더해주면 된다.
+그렇게 나온 숫자들을 최대값과 비교해 주면 된다.
+속도를 더 계선하려면 if문을 통해서 필요없는 연산을 줄여주면 좋을 것 같다.
