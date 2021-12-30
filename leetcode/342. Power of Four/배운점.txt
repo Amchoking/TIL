@@ -1,0 +1,17 @@
+342. Power of Four
+
+problem:
+Given an integer n, return true if it is a power of four. Otherwise, return false.
+An integer n is a power of four, if there exists an integer x such that n == 4**x.
+
+문제:
+정수 n이 주어진다, 그것이 4의 거듭제곱값이면 true을 리턴하고 아니면 false를 리턴해라.
+만약 n == 4**x를 만족시키는 정수 x가 존재한다면, n은 4의 거듭제곱 꼴이다.
+
+배운점, 해결방법:
+이 문제자체는 쉽지만 이 문제를 풀려고 선택한 이유는 follow up 지문 때문이다.
+루프와 재귀를 사용하지 않고 이 문제를 풀어야 했다.
+그래서 나는 2의거듭제곱 판별법 (n&(-n)==n 이면 2의 거듭제곱)을 응용하여 해결해 보기로 했다.
+2의 거듭제곱일때 제곱근의 값이 정수라면 이것은 4의 거듭제곱이 되며 이때 True를 리턴한다.
+0보다 작거나 같을때는 False를 리턴한다.
+이렇게하면 재귀나 반복문없이 이 문제를 풀 수 있다.
