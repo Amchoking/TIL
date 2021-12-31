@@ -1,0 +1,10 @@
+50. Pow(x, n)
+
+problem:
+Implement pow(x, n), which calculates x raised to the power n (i.e., x**n).
+
+문제:
+pow(x,n)을 구현해라.
+
+해결방법:
+그냥 x**n을하면 끝난다. 이게 왜 노멀문제인지 모르겠다...
