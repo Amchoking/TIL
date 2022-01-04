@@ -1,0 +1,13 @@
+217. Contains Duplicate
+
+Problem:
+Given an integer array nums, return true if any value appears at least twice in the array,
+and return false if every element is distinct.
+
+문제:
+정수배열이 주어진다 같은 값이 배열에 최소한 2번이상 나타나면 True를 리턴하고,
+모든 요소가 한번씩 나오면 False를 리턴하라.
+
+해결방법:
+딕셔너리에 넣어서 키값이 있는지 확인하고 없으면 추가, 있으면 True리턴
+모든 값들의 비교가 끝나면 False리턴
