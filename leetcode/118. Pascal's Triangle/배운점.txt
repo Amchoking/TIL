@@ -1,0 +1,10 @@
+118. Pascal's Triangle
+
+Problem:
+Given an integer numRows, return the first numRows of Pascal's triangle.
+
+문제:
+numRows가 주어질때 파스칼 삼각형을 리턴하는 문제이다.
+
+배운점, 해결방법:
+그냥 배열에 넣고 이전 두 값들을 더해가며 해결하면 된다,

@@ -1,0 +1,11 @@
+119. Pascal's Triangle II
+
+Problem:
+Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle.
+
+문제:
+rowIndex가 주어질때 rowIndex번재의 파스칼 삼각형 행을 리턴하는 문제이다.
+
+배운점, 해결방법:
+그냥 배열에 넣고 이전 두 값들을 더해가며 해결하면 되었던 118번 문제에서 해당 행만 빼오면 된다.
+하지만 좀더 시간을 단축하고 싶다면, nCm을 이용하여 해당 열에있는 부분만 계산해 주면 된다.
