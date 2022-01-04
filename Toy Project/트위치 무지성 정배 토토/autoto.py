@@ -31,7 +31,7 @@ def autoto(): #1회 오토 토토
         time.sleep(5)
     time.sleep(1)
     pag.click((2253, 1378))
-    time.sleep(1)
+    time.sleep(10)
     screen = ImageGrab.grab()
     left = screen.getpixel((2487, 1138))
     middle = screen.getpixel((2503, 1138))
@@ -50,7 +50,7 @@ def autoto(): #1회 오토 토토
         isleft=True
     pag.click((2278, 1128))
     time.sleep(1)
-    pag.click((2376, 1331))
+    pag.click((2376, 1316))
     time.sleep(1)
     if(isleft):
         pag.click((2300, 1292))
