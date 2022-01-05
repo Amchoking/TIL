@@ -1,0 +1,23 @@
+37. Sudoku Solver
+
+Problem:
+Write a program to solve a Sudoku puzzle by filling the empty cells.
+A sudoku solution must satisfy all of the following rules:
+Each of the digits 1-9 must occur exactly once in each row.
+Each of the digits 1-9 must occur exactly once in each column.
+Each of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.
+The '.' character indicates empty cells.
+
+문제:
+스도쿠의 빈칸을 채우는 프로그램을 짜라
+스도쿠는 다음 조건들을 만족시킨다:
+한 행에 1~9까지의 숫자가 한번씩만 등장
+한 열에 1~9까지의 숫자가 한번씩만 등장
+각각의 3x3구역에 대해 1~9까지의 숫자가 한번씩만 등장
+"."은 빈칸을 의미한다.
+
+배운점, 해결방법:
+예전 백준에서 비슷한 문제를 풀었던 기억이 있어 쉽게 구현할 수 있었다.
+처음에는 브루트 포스로 했는데 시간이 너무 많이 걸렸고, 각각의 숫자가 들어갈 수 있는지 확인한 뒤
+값을 비교하고 입력하는 것이 속도면에서 확실히 이득이라는 사실을 이해했다.
+처음으로 하드난이도를 풀었는데 기분이 너무좋다.
