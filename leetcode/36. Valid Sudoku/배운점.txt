@@ -1,0 +1,26 @@
+36. Valid Sudoku
+
+Problem:
+Determine if a 9 x 9 Sudoku board is valid.
+Only the filled cells need to be validated according to the following rules:
+Each row must contain the digits 1-9 without repetition.
+Each column must contain the digits 1-9 without repetition.
+Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition.
+note:
+A Sudoku board (partially filled) could be valid but is not necessarily solvable.
+Only the filled cells need to be validated according to the mentioned rules.
+
+문제:
+9x9 스도쿠판이 가능한지 확인하라
+오직 채워진 요소만이 다음의 룰을 만족시킬 필요가 있다.
+각각의 행은 중복없이 1~9까지의 숫자가 포함된다
+각각의 열은 중복없이 1~9까지의 숫자가 포함된다
+각각의 3x3의 내부 칸은 중복없이 1~9까지의 숫자가 포함된다
+주목하라:
+(부분적으로 채워진) 스도쿠판이 가능하더라도 풀릴 필요는 없다.
+오로직 채워진 칸들에서만 언급된 규칙에 따르면 된다.
+
+해결방법:
+사실 이 문제보다 스도쿠를 해결하는 문제를 먼저 풀었기 때문에 쉽게 할 수 있었다.
+그냥 각 행과 열을 반복문을 사용해서 중복되는지 확인하고 중복되는 경우는 False 끝까지 확인했을 때
+이상이 없다면 True를 리턴한다.
