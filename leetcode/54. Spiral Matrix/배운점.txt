@@ -1,0 +1,13 @@
+54. Spiral Matrix
+
+Problem:
+Given an m x n matrix, return all elements of the matrix in spiral order.
+
+문제:
+m x n의 배열이 주어진다, 나선의 순서로 배열의 요소를 리턴하라.
+
+배운점, 해결방법:
+오른쪽 아래 왼쪽 위가 반복되므로 안에 남아있는 모든 요소들에 대하여 반복문을 취해주면 된다.
+오른쪽과 아래, 왼쪽과 위를 서로 한세트로 묶어서 반복해 가며 값을 리턴해 주었다.
+leetcode의 submit결과가 실행할 때마다 다르게 나온다는 사실을 알았다.
+다음에 결과를 보고, 다른사람의 코드를 공부할 때 참고해야겠다. 
