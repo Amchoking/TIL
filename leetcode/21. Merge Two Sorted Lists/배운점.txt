@@ -1,0 +1,18 @@
+21. Merge Two Sorted Lists
+
+Problem:
+You are given the heads of two sorted linked lists list1 and list2.
+Merge the two lists in a one sorted list.
+The list should be made by splicing together the nodes of the first two lists.
+Return the head of the merged linked list.
+
+문제:
+너에게 linked list 2개(list1, list2)의 시작헤드가 주어진다.
+두개의 리스트를 하나의 정렬된 리스트로 병합하라.
+목록은 처음 두 목록의 노드를 함께 결합하여 만들어야 한다.
+병합된 linked list의 헤드를 리턴하라.
+
+배운점, 해결방법:
+병합된 linked list의 next값을 ListNode로 계속 이어나가 주어야 하는데 마지막에는 None이 와야하므로 더 이상 병합할 노드가 없을때에는
+next값을 ListNode가 아닌 None으로 만들어 연결시켜주면 된다.
+두개의 연결리스트의 현재 값을 비교하여 작은것을 추가시켜준 뒤 다음 값을 비교하는 방식으로 계속 반복하면 된다.
