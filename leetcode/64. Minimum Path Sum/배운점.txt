@@ -1,0 +1,13 @@
+64. Minimum Path Sum
+
+Problem:
+Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path.
+Note: You can only move either down or right at any point in time.
+
+문제:
+m x n의 그리드가 음이아닌 정수로 채워져 있다. 왼쪽 위에서 오른쪽 아래로 이동하는 합이 가장적은 경로를 찾아라.
+주목하라: 너는 오른쪽이나 아래로만 이동 할 수 있다.
+
+배운점, 해결방법:
+dp를 이용해 2차원 배열을 만들고 각지점에 도달가능한 가장 작은 합을 계속해서 더해나갔다.
+저장공간을 더 줄이려면 굳이 dp배열을 만들지 말고, grid배열에 그대로 계산하거나, 1차원배열을 만들어 한줄씩 반복해 나가면 될것이다.
