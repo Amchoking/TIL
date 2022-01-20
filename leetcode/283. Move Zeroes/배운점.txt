@@ -1,0 +1,14 @@
+283. Move Zeroes
+
+Problem:
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+Note that you must do this in-place without making a copy of the array.
+
+문제:
+정수배열이 주어진다. 모든 0을 0이아닌 요소들의 위치를 유지한체 맨 뒤로 넣어라.
+어떠한 배열의 복사본도 만들지 마라
+
+배운점, 해결방법:
+처음에는 투 포인터로 0의 위치와 0이 아닌 첫 수를 기록해서 하려고 했는데, 제출결과 생각보다 시간과 공간의 손실이 많았다.
+그래서 다음으로 사용한 것이 pop을 사용해서 0을 빼내고 맨 마지막에 append를 통해 0을 추가하는 방식이었다.
+하지만 이 방식의 경우 반복문속 index값이 밀리는 현상이 발생하므로 0이 나온 수를 체크해서 계산에 포함시켜주어야 한다. 
