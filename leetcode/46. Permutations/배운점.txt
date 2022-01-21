@@ -1,0 +1,16 @@
+46. Permutations
+
+Problem:
+Given an array nums of distinct integers, return all the possible permutations.
+You can return the answer in any order.
+
+문제:
+주어진 별개의 정수 배열에 대해 가능한 모든 순열을 리턴하라.
+순서는 상관없다.
+
+배운점, 해결방법:
+이전에 비슷한 문제를 재귀함수를 이용하여 푼 기억이 있다.
+그래서 이번에는 재귀함수를 사용하지않고 풀어보려고 했다.
+방법은 n개의 숫자를 하나씩 순열 배열에 추가하고, 새로운 숫자가 순열배열에 들어올 때,
+가능한 위치에 해당하는 모든 순열 배열을 insert(가능한 위치,새로운 숫자)로 계속 추가해 나간다.
+이렇게 하면 재귀함수를 사용하지 않고 이 문제를 풀 수 있다.
