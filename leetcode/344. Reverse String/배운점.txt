@@ -1,0 +1,13 @@
+344. Reverse String
+
+Problem:
+Write a function that reverses a string. The input string is given as an array of characters s.
+You must do this by modifying the input array in-place with O(1) extra memory.
+
+문제:
+문자열을 역순으로 만드는 함수를 만들어라. 입력문자열은 s의 배열로 주어진다.
+O(1)의 여분의 메모리 만을 사용하라.
+
+배운점, 해결방법:
+처음에는 길이를 측정하여 처음과 끝을 바꾸는 것을 중앙으로 옮겨가며 반복하려 했지만,
+이와같은 기능을 수행하는 내장함수를 찾아본 결과 reverse가 있어서 그것을 사용했다.
