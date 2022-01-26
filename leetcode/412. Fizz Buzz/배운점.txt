@@ -1,0 +1,20 @@
+412. Fizz Buzz
+
+Problem:
+Given an integer n, return a string array answer (1-indexed) where:
+answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+answer[i] == "Fizz" if i is divisible by 3.
+answer[i] == "Buzz" if i is divisible by 5.
+answer[i] == i (as a string) if none of the above conditions are true.
+
+문제:
+정수 n이 주어질 때, 문자열 배열을 리턴하라.
+answer[i]의 값은 다음과 같다.
+3과 5로 i가 나누어 떨어지면 "FizzBuzz"
+3으로 i가 나누어 떨어지면 "Fizz"
+5로 i가 나누어 떨어지면  "Buzz"
+여기에 포함되지 않으면 i(문자열로)
+
+배운점, 해결방법:
+1~n까지 넣고 3, 5, 15를 변경하는 방법과, if문을 통해서 해당하는 값을 넣는것중 어느것이 빠른지
+확인해보았는데 if문이 더 빨랐다.
