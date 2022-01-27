@@ -1,0 +1,17 @@
+121. Best Time to Buy and Sell Stock
+
+Problem:
+You are given an array prices where prices[i] is the price of a given stock on the ith day.
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+문제:
+prices[i]배열에 i번째 날 주식의 값들이 주어진다.
+한 날에 사서 다른 한 날에 팖으로써 가장 큰 이익을 얻고자 한다.
+니가 거래로 얻을 수 있는 최대이익을 리턴하라, 만약 어떤 이익도 없다면 0을 리턴해라.
+
+배운점, 해결방법:
+최소 주식값, 최대 주식값, 주식 값차이 이 세가지의 변수를 이용하여 이 문제를 풀 수 있다.
+첫날부터 시작해서 최소 주식값보다 작은값이 들어오면 최소 주식값을 재입력 해주고 최대 주식값을 0으로 초기화 해준다.
+만약 최대 주식값보다 큰 값이 들어왔으면 최대 주식값을 재입력해주고, 만약 최소주식값과 최대주식값의 차이가 이전 주식값차이보다 크다면
+주식 값차이를 업로드 시켜준다. 마지막 날까지 반복하면, 해결가능하다.
