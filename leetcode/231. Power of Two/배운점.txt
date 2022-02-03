@@ -1,0 +1,12 @@
+231. Power of Two
+
+Problem:
+Given an integer n, return true if it is a power of two. Otherwise, return false.
+An integer n is a power of two, if there exists an integer x such that n == 2^x.
+
+문제:
+정수 n이 주어진다. 2의 제곱수이면 true 아니면 false를 리턴하라.
+정수 n이 2의 제곱수인것은 n == 2^x 인것이다.
+
+배운점, 해결방법:
+n & (n-1)의 비트연산을 실행한 뒤 값이 0이면 2의 거듭제곱임을 이용하여 쉽게 해결 할 수 있다. 0일 경우에는 예외가 발생하는데 이것만 해결해 주면 된다.
