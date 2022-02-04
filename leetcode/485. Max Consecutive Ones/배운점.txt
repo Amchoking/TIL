@@ -1,0 +1,10 @@
+485. Max Consecutive Ones
+
+Problem:
+Given a binary array nums, return the maximum number of consecutive 1's in the array.
+
+문제:
+이진 숫자들의 배열이 주어질 때, 최대로 연속된 1의 갯수를 구하여라.
+
+배운점, 해결방법:
+배열의 처음부터 시작해서 0이면 현재까지 연속된 값을 최대값과 비교하여 크면 초기화 해주고, 아니면 현재까지 연속된 값을 1 증가시키는 것을 반복한다.
