@@ -1,0 +1,12 @@
+19. Remove Nth Node From End of List
+
+Problem:
+Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+문제:
+연결리스트의 헤드가 주어질 때, 리수트의 끝에서 n번째 노드를 제거한 리스트의 헤드를 리턴하라.
+
+배운점, 해결방법:
+처음에 연결리스트의 길이를 측정한 다음 없애야 하는 노드를 탐색한다. 만약 헤드노드를 제거하는 경우
+헤드의 다음값을 리턴해 주면 된다. 그렇지 않다면, 해당 노드의 다음값을 다다음값으로 설정해주어
+해당값의 연결을 끊어주면 된다.
