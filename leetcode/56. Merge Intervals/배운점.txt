@@ -1,0 +1,13 @@
+56. Merge Intervals
+
+Problem:
+Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals,
+and return an array of the non-overlapping intervals that cover all the intervals in the input.
+
+문제:
+intervals[i]=[시작i,끝i]인 시간간격 배열이 주어진다. 겹치는 모든 구간을 합쳐라, 그리고 겹치지 않는 구간들의 배열을 리턴하라. 그 배열은 입력된 모든 구간을 포함해야 한다.
+
+배운점, 해결방법:
+시작지점을 기준으로 정렬을 하면 현재의 끝나는 시간보다 다음 구간의 시작 시간이 더 클 경우 겹치지 않는 것을 의미한다.
+따라서 정렬이후 다음 시작시간이 지금까지의 끝나는 시간보다 더 클경우 현재의 시간간격을 저장하고, 현재 시간간격을 다음 시간간격으로 초기화 해준다.
+만약 현재의 시간간격안에 다음 시작시간이 포함된다면 현재의 끝시간을 최대값으로 설정해주어 반복해 나가면 된다.
