@@ -1,0 +1,17 @@
+15. 3Sum
+
+Problem:
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+Notice that the solution set must not contain duplicate triplets.
+
+문제:
+정수배열이 주어진다. i != j, i != k, and j != k 이면서 nums[i] + nums[j] + nums[k] == 0를 만족하는 [nums[i], nums[j], nums[k]]를 모두 리턴하라.
+똑같은 세 쌍이 없음에 주목하라.
+
+배운점, 해결방법:
+처음에는 그냥 3중 for문으로 구현하려 하였으나 시간초과가 떴다. 그래서 2중 for문에 딕셔너리를 통해 값을 찾아나가는 방법을 사용하였다.
+이로써 O(n^2)으로 문제를 해결 할 수 있었다. 하지만 이 방법을 사용하면 많은 메모리를 사용하게 된다. 다른 해결방법을 찾던 중 투 포인터를 이용한 방법을 찾았다.
+우선 값들을 정렬한다. 3개의 합이 0이 되려면 무조건 음수와 양수 하나씩 들어가야하므로, 양수의 경우는 생략한다.
+정렬된 값의 i번째 값이 음수라면 i+1번째 값과 마지막값을 시작으로 셋의 합이 0이되는 값들을 찾아나간다. 만약 세 합이 0보다 작다면 i+1번 째 값을 i+2번째 값으로 바꾸고,
+만약 세 합이 0보다 크다면 마지막 번 값을 마지막-1번 째 값으로 바꾼다. 이렇게 계속 찾아나가며 정답배열에 추가해 나간다.
+이렇게 하면 O(n^2)시간복잡도 이면서 O(1)의 공간복잡도로 이 문제를 해결 할 수 있다.
