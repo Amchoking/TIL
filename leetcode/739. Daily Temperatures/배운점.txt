@@ -1,0 +1,18 @@
+739. Daily Temperatures
+
+Problem:
+Given an array of integers temperatures represents the daily temperatures,
+return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature.
+If there is no future day for which this is possible, keep answer[i] == 0 instead.
+
+문제:
+온도를 나타내는 매일의 온도가 정수배열로 주어진다.
+answer[i]가 그날 부터 더 따뜻해지는 날까지의 길이를 나타내도록 answer배열을 리턴하라.
+만약 그런 날이 없다면 answer[i]==0으로 두어라.
+
+해결방법:
+처음부터 n번까지 현재 온도와 날을 저장하는 배열을 만들고, 그 배열에 처음부터 하나씩 넣어 나간다.
+만약 i번째 날의 온도가 입력 되었을 때, 저장되어 있는 값들 중에서 i번째 날의 온도보다 낮은 날이 있다면
+i번째 날과의 길이를 answer배열에 입력하고, 배열에서 제외시킨다.
+해당하는 날들을 모두 제외시킨 후에 i번째 날의 온도와 날짜를 savedata배열의 0번째 인덱스에 삽입시킨다.
+이러면 savedata배열의 온도는 항상 오름차순으로 유지되므로 쉽고 빠르게 알고리즘 수행이 가능해진다.
