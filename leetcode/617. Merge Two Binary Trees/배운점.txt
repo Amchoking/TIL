@@ -1,0 +1,25 @@
+617. Merge Two Binary Trees
+
+Problem:
+You are given two binary trees root1 and root2.
+Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not.
+You need to merge the two trees into a new binary tree.
+The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node.
+Otherwise, the NOT null node will be used as the node of the new tree.
+Return the merged tree.
+Note: The merging process must start from the root nodes of both trees.
+
+문제:
+두 개의 이진트리의 루트1, 루트2가 주어진다.
+두 개를 서로 겹친다고 생각하라, 몇몇 노드들은 겹쳐지고, 다른 것들은 겹쳐지지 않을 것이다.
+두 개를 합쳐 새로운 이진트리로 만들어야 한다.
+합치는 규칙은 만약 두 노드가 겹쳐진다면 두 노드의 합이 새로운 노드의 값이 되고,
+그렇지 않다면 null이 아닌 값이 새로운 노드의 값이 된다.
+합쳐진 트리를 리턴하라.
+주의 : 합쳐지는 방식은 두 노드의 루트부터이다.
+
+배운점, 해결방법:
+처음에는 2개의 노트의 모든 노드를 탐색하가면서 null인경우와 아닌경우에 따라 새로운 노드를 만들어 나가는 방법을 사용하였다.
+하지만 그 결과 런타임 속도가 느려져서 새로운 방법을 생각해 보았다.
+만약 null이 나온다면 null이 아닌 노드의 값을 새로운 트리의 노드에 연결시켜주고 함수를 빠져나오는 것이다.
+이렇게 되면 겹치지 않는 부분에 해당하는 것 들을 불필요하게 탐색할 필요가 없어져 훨씬 빠른 코드실행이 가능해진다.
