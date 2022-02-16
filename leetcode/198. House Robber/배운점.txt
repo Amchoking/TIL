@@ -1,0 +1,19 @@
+198. House Robber
+
+Problem:
+You are a professional robber planning to rob houses along a street.
+Each house has a certain amount of money stashed,
+the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
+
+문제:
+너는 길의 집들을 털 계획중인 전문적인 도둑이다.
+각각의 집은 특정한 양의 숨겨둔 돈들이 있다.
+너의 도둑질을 강제로 멈출 수 있는 방법은 인접한 집들에 연결된 경비 시스템이다. 그리고 그것은 같은날 두 집을 털었을 때 경찰에게 자동적으로 연결된다.
+각각의 집이 가지고 있는 돈의 양이 주어질 때, 오늘 밤 경찰에 연락없이 도둑질 할 수 있는 최대금액을 리턴하라.
+
+배운점, 해결방법:
+다이나믹 프로그래밍으로 이 문제를 해결하였다.
+처음부터 i번째 집까지 도둑질 할 때, 가장 많이 훔칠 수 있는 금액은 nums[i]=nums[i]+max(nums[i-2],nums[i-3])가 된다.
+왜냐하면 이전 집(i-1)은 털 수 없으며, 가지고 있는 돈의 양은 항상 0이상이기 때문에 (i-4)번째 집보다 (i-2)번째 집까지 털었을 때 더 많은 금액을 털 수 있다.
+따라서 모든 집의 수만큼 반복하여 털 수 있는 금액의 최대값을 구할 수 있다.
