@@ -1,0 +1,22 @@
+494. Target Sum
+
+Problem:
+You are given an integer array nums and an integer target.
+You want to build an expression out of nums by adding one of the symbols '+' and '-' before each integer in nums and then concatenate all the integers.
+For example, if nums = [2, 1], you can add a '+' before 2 and a '-' before 1 and concatenate them to build the expression "+2-1".
+Return the number of different expressions that you can build, which evaluates to target.
+
+문제:
+너에게 정수 숫자배열과 타겟정수 하나가 주어진다.
+각각의 숫자들 앞에 +나 -를 배치하여 숫자들로 표현식을 만들려고 한다.
+예를들어, 만약 nums = [2, 1]이라면 2전에 +, 1전에 -를 추가하여 "+2-1"이라는 식을 만들 수 있다.
+타겟값을 만들 수 있는 서로다른 표현식의 숫자를 리턴하라.
+
+배운점, 해결방법:
+처음에는 2^20 정도면 재귀함수로 풀어도 시간초과가 발생하지 않을 줄 알았다.
+하지만 시간초과가 발생하였고, 다른 풀이를 생각해 내었다.
+반씩 숫자들을 나누어 2^10 = (1024)개의 경우의 수를 딕셔너리에 저장하는 방법이다.
+만약 이미 키값이 존재한다면 키값에 1을 더해주고, 없다면 키값의 밸류를 1로 설정해주어,
+키값일 때 가능한 경우수를 밸류값으로 저장해 놓았다.
+이 후 한 딕셔너리에 있는 모든 키값에 대해 (target-키값)이 다른 딕셔너리에 있다면 표현식으로 target값을 만들 수 있는 경우이다.
+이 경우에 두개의 밸류값을 곱한값을 answer값에 더해준다면, 최종적으로 모든 표현식의 경우의 수가 모두 포함된다.
