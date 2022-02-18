@@ -1,0 +1,13 @@
+347. Top K Frequent Elements
+
+Problem:
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+
+문제:
+정수배열과 정수 k가 주어질 떄, 가장많이 등장한 요소들 k개를 출력하라. 순서는 상관없다.
+
+배운점, 해결방법:
+처음에는 딕셔너리에 모든값들을 넣은 뒤, 등장한 수만큼 밸류값을 설정하여 정렬하는 방법으로 문제를 해결하려고 하였다.
+하지만 공간활용을 더 좋게하기 위하여, 딕셔너리를 사용하지 않고, 주어진 배열을 최대한 활용하기로 하였다.
+우선 배열을 정렬한 뒤, 나온 숫자들을 세서, 임의의 배열에 [나온횟수, 수]를 넣고, 정렬한다.
+그렇게 되면 배열의 뒤부터 k개의 값들이 가장 많이나온 k개의 수들이 된다.
