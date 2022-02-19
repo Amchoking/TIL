@@ -1,0 +1,10 @@
+234. Palindrome Linked List
+
+Problem:
+Given the head of a singly linked list, return true if it is a palindrome.
+
+문제:
+연결리스트의 head가 주어질 때, 대칭이라면 참을 리턴하라.
+
+배운점, 해결방법:
+리스트의 요소들을 checkstr에 저장하여 str==str[::-1]이라면 대칭이라는 점을 이용하여, 이 문제를 해결했다.
