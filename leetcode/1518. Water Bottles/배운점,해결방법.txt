@@ -1,0 +1,18 @@
+1518. Water Bottles
+
+Problem:
+There are numBottles water bottles that are initially full of water.
+You can exchange numExchange empty water bottles from the market with one full water bottle.
+The operation of drinking a full water bottle turns it into an empty bottle.
+Given the two integers numBottles and numExchange, return the maximum number of water bottles you can drink.
+
+문제:
+처음에 물이 담겨있는 numBottles이 주어진다.
+넌 numExchange개의 빈 물병으로 새로운 물이 담긴 병을 교환할 수 있다.
+물이든 병을 마시면 빈병이 된다.
+두 정수 numBottles, numExchange가 주어질 때, 니가 마실 수 있는 물의 최대량을 리턴하라.
+
+배운점, 해결방법:
+빈 물병이 교환가능한 수보다 작을 때까지 계속 반복해주면 된다.
+교환물병을 나눈 몫이 새 물병의 수가 되며, 나눈 몫과 나머지의 합이 이 후 총 빈 물병의 수가 된다.
+이것을 반복해나가며 새 물병을 얻을 때마다 더해주면 된다.
